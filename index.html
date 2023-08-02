@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <title>Encriptador web</title>
+</head>
+<body>
+    <main>
+        <img id="logo-principal" src="logos/Vector.svg" alt="logo-principal"/>
+        <div id="contenedor-texto">
+            <textarea id="texto-a-encrip-desencrip" cols=auto rows="15" placeholder="Ingrese el texto aquí"></textarea>
+        </div>
+        <div id="div-advertencia">
+            <img src="logos/Advertencia.svg" alt="Icono-advertencia" sizes="16x16"/>
+            <span class="span-adv">Solo letras minúsculas y sin acentos</span>
+        </div>
+        <div class="container-buttons">
+            <input type="button" id="btn_enc" value="Encriptar">
+            <input type="button" id="btn_des" value="Desencriptar">
+        </div>
+    </main>
+    <aside class="original_content">
+        <img class="img-muñeco" src="img/Muñeco.png" alt="img-muñeco">
+        <div class="msj-avisos">
+            <span class="msj-respuesta">Ningún mensaje fue encontrado</span>
+            <span class="msj-sugerencia">Ingresa el texto que deseas encriptar o desencriptar.</span>
+        </div>
+    </aside>
+
+    <script type="module" src="js/lectura_escritura.js"></script>
+</body>
+</html>
